@@ -8,11 +8,11 @@ open Chapter_03_ex_4
 type ``Chapter_03_ex_4_Tests``() = 
     [<Test>]
     member x.``3.4 mirrorX tuple``() = 
-        mirrorX (1, 2) |> should equal (-1, -2)
+        mirrorX (1, 2) |> should equal (1, -2)
 
     [<Test>]
     member x.``3.4 mirrorX record``() = 
-        mirrorXRec {a=1.0;b=2.0} |> should equal {a= -1.0; b= -2.0}
+        mirrorXRec {a=1.0;b=2.0} |> should equal {a= 1.0; b= -2.0}
 
     [<Test>]
     member x.``3.4 mirrorY tuple``() = 

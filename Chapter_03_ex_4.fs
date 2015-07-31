@@ -13,11 +13,11 @@ type StraightLine = float*float
 // 3.4 2. 
 let mirrorX line =
     let a, b = line
-    (-a, -b)
+    (a, -b)
 
 let mirrorXRec (line: StraightLineRec) =
     let a, b = line.a, line.b
-    { a= -a; b= -b}
+    { a= a; b= -b}
 
 let mirrorY line =
     let a, b = line
